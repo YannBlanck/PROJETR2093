@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+
+
+
+<ol>
+    {% for l in liste %}
+        <li> {{l}}  <a href="/album/affiche/{{l.id}}"> affiche </a> <a href="/album/update/{{l.id}}"> Update </a> <a href="/album/delete/{{l.id}}"> Delete </a> </li>
+    {%endfor%}
+</ol>
+<form action="/album/acheterindex/">
+    <button type="submit" class="button">liste achat</button>
+</form>
+
+<form action="/album/ajout/">
+    <button type="submit" class="button">ajouter un album</button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="/album/">
+        <button type="submit" class="button">Album</button>
+    </form>
+
+    {% if id != '' %}
+        <form method="post" action="/album/acheterupdatetraitement/{{id}}/">
+    {% else %}
+        <form method="post" action="/album/achetertraitement/">
+    {% endif %}
+    {% csrf_token %}
+    {{ form.as_ul }} <!-- permet d'afficher tous les champs sous forme d'une liste-->
+
+    <input type="submit" value="envoyer␣les␣données"/>
+        </form>
+    </form>
+
+</body>
+</html>
