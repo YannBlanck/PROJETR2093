@@ -21,7 +21,6 @@ class Acheter(models.Model):
     date_achat = models.DateField(blank=True, null=True)
     Prix_total = models.IntegerField(blank=True)
 
-
     def __str__(self):
         chain = f"Nom {self.Nom_acheteur} Nbr_album {self.Nbr_album} date achat {self.date_achat} Prix total {self.Prix_total}"
         return chain

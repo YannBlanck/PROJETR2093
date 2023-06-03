@@ -21,6 +21,5 @@ class AcheterForm(ModelForm):
             'Nom_acheteur': _('Nom'),
             'Nbr_album': _('nbr_album'),
             'date_achat': _('date achat'),
-            'Prix_total': _('Prix'),
-
+            'Prix_total': _('Prix')
         }
